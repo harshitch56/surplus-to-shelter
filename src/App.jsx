@@ -1,4 +1,5 @@
 import { memo, useEffect, useRef, useState } from "react";
+
 import { CircleMarker, MapContainer, Polyline, Popup, TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -587,6 +588,7 @@ function App() {
 
   return (
     <div className={focusMode ? "app focus-mode" : "app"}>
+    
       <style>{styles}</style>
       <div className="ambient-stage" aria-hidden="true">
         <span className={`ambient-layer ambient-theme-1 ${backgroundTheme === 0 ? "active" : ""}`} />
